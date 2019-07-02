@@ -1,3 +1,10 @@
-<p>
-  main works!
-</p>
+<mat-sidenav-container fullscreen>
+
+  <app-header *ngIf="url != '/home/two'"></app-header>
+  <app-header-two *ngIf="url == '/home/two'"></app-header-two>
+
+  <router-outlet></router-outlet>
+
+  <app-footer></app-footer>
+
+</mat-sidenav-container>
