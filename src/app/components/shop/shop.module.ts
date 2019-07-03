@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MainCarouselComponent } from './home/main-carousel/main-carousel.component';
+import { MainCarouselComponent } from './main-carousel/main-carousel.component';
 import { PriceComponent } from './products/price/price.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
@@ -17,8 +17,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { HomeTwoComponent } from './home-two/home-two.component';
 import { HomeThreeComponent } from './home-three/home-three.component';
-import { ProductTabComponent } from './home-three/product-tab/product-tab.component';
-import { ProductTabTwoComponent } from './home-two/product-tab-two/product-tab-two.component';
+
 import { ProductCarouselComponent } from './../shop/home/product-carousel/product-carousel.component';
 import { from } from 'rxjs';
 import { ProductCarouselTwoComponent } from './home-two/product-carousel-two/product-carousel-two.component';
@@ -38,8 +37,7 @@ import { ProductCarouselThreeComponent } from './home-three/product-carousel-thr
     ProductVerticalComponent,
     HomeTwoComponent,
     HomeThreeComponent,
-    ProductTabComponent,
-    ProductTabTwoComponent,
+
     ProductCarouselComponent,
     ProductCarouselTwoComponent,
     ProductCarouselThreeComponent,

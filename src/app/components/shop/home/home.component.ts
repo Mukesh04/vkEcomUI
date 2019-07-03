@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../shared/services/product.service';
+import { Product } from 'src/app/modals/product.model';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,7 @@ import { ProductService } from '../../shared/services/product.service';
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
+  products: Product[];
   public banners = [];
   public slides = [
     { title: 'The biggest sale', subtitle: 'Special for today', image: '../../../assets/images/carousel/banner1.jpg' },
@@ -22,7 +24,15 @@ export class HomeComponent implements OnInit {
     this.productService.getBanners()
     .subscribe(
       data => this.banners = data
-    )
+    );
+
+ this.productService.getProducts()
+ .subscribe(
+   (product: Product[]) => {
+     this.products = product
+   }
+ )
+
   }
 
 
