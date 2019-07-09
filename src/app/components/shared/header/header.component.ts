@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/modals/product.model';
 import { CartItem } from 'src/app/modals/cart-item';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +9,8 @@ import { CartItem } from 'src/app/modals/cart-item';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent implements OnInit {
+
+
   public currencies = ['USD', 'EUR'];
   public currency:any;
   public flags = [
@@ -25,7 +28,10 @@ export class HeaderComponent implements OnInit {
   public sidenavMenuItems:Array<any>;
   shoppingCartItems: CartItem[] = [];
 
-  constructor() { }
+
+  constructor(private cartService: CartService) {
+    this.cartService.getItems().subscribe(shoppingCartItems => this.shoppingCartItems = shoppingCartItems);
+  }
 
   ngOnInit() {
     this.currency = this.currencies[0];

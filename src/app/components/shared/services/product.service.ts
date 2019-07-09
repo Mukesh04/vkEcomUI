@@ -10,7 +10,7 @@ import { Product } from 'src/app/modals/product.model';
   providedIn: 'root'
 })
 export class ProductService {
-
+  public currency : string = 'USD';
   private _url: string = "assets/data/";
   public url = "assets/data/banners.json";
 
