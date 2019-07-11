@@ -19,7 +19,7 @@ export class ShoppingWidgetsComponent implements OnInit {
 
   @Input() shoppingCartItems: CartItem[] = [];
 
-  constructor(private cartService: CartService, private productService: ProductService) { }
+  constructor(private cartService: CartService, public productService: ProductService) { }
 
   ngOnInit() {
   }

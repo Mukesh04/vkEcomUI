@@ -8,7 +8,7 @@
               <span class="cart-count-wrapper">{{shoppingCartItems.length}}</span>
             </div>
             <div class="top-cart">
-                <span>{{ getTotal() | async | currency:productsService?.currency:'symbol' }}</span>
+                <span>{{ getTotal() | async | currency:productService?.currency:'symbol' }}</span>
             </div>
       </div>
     </button>
@@ -39,7 +39,7 @@
               <mat-divider></mat-divider>
               <div class="total" fxLayout="row" fxLayoutAlign="space-between center">
                   <p class="text-muted">Subtotal: </p>
-                  <span>{{ getTotal() | async | currency:productsService?.currency:'symbol' }}</span>
+                  <span>{{ getTotal() | async | currency:productService?.currency:'symbol' }}</span>
                 </div>
             </div>
       </div>

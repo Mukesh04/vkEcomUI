@@ -99,7 +99,19 @@ public getTotalAmount(): Observable<number> {
   }));
 }
 
-
+// Update Cart Value
+public updateCartQuantity(product: Product, quantity: number): CartItem | boolean {
+  return products.find((items, index) => {
+    if(items.product.id == product.id) {
+      let qty = products[index].quantity + quantity;
+      let stock = this.calculateStockCounts(products[index], quantity);
+      if (qty != 0 && stock)
+        products[index]['quantity'] = qty;
+      localStorage.setItem("cartItem", JSON.stringify(products));
+      return true;
+    }
+  });
+}
 
 
 }
