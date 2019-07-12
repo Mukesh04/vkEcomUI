@@ -3,7 +3,6 @@ import { Product } from '../../../modals/product.model';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { BehaviorSubject, Observable, of, Subscriber} from 'rxjs';
 import { map, filter, scan } from 'rxjs/operators';
-import 'rxjs/add/operator/map';
 
 // Get product from Localstorage
 let products = JSON.parse(localStorage.getItem("wishlistItem")) || [];
