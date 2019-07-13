@@ -3850,3 +3850,34 @@ margin-top: 10px;
 .review-wrapper {
 padding-right: 30px;
 }
+
+/***************************************
+*  Brands page styles
+****************************************/
+
+.brands-items {
+  .mat-radio-button {
+    margin-bottom: 15px;
+  }
+  .mat-radio-button.mat-accent .mat-radio-inner-circle {
+    background: #ffc111 !important;
+  }
+}
+
+
+/***************************************
+*  Categorie page styles
+****************************************/
+
+.category-contant {
+  ul {
+    li {
+      a {
+        color: $grey;
+        padding-bottom: 10px;
+        display: block;
+        font-size: 15px;
+      }
+    } 
+  }
+} 

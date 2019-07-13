@@ -22,6 +22,9 @@ import { ProductCarouselComponent } from './../shop/home/product-carousel/produc
 import { from } from 'rxjs';
 import { ProductCarouselTwoComponent } from './home-two/product-carousel-two/product-carousel-two.component';
 import { ProductCarouselThreeComponent } from './home-three/product-carousel-three/product-carousel-three.component';
+import { BrandsComponent } from './widgets/brands/brands.component';
+import { CategoriesComponent } from './widgets/categories/categories.component';
+import { PopularProductsComponent } from './widgets/popular-products/popular-products.component';
 
 
 @NgModule({
@@ -41,6 +44,9 @@ import { ProductCarouselThreeComponent } from './home-three/product-carousel-thr
     ProductCarouselComponent,
     ProductCarouselTwoComponent,
     ProductCarouselThreeComponent,
+    BrandsComponent,
+    CategoriesComponent,
+    PopularProductsComponent,
   ],
   imports: [
     CommonModule,

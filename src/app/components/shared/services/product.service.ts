@@ -15,6 +15,8 @@ let products = JSON.parse(localStorage.getItem("compareItem")) || [];
 })
 export class ProductService {
   public currency : string = 'USD';
+  public catalogMode : boolean = false;
+
   private _url: string = "assets/data/";
   public url = "assets/data/banners.json";
 
