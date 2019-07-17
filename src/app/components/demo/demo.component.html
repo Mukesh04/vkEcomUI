@@ -1,24 +1,26 @@
 <div class="demo-wrapper">
   <div class="demo-header">
       <div class="container">
-         <div fxFlex="100" fxFlex.gt-sm="50" class="left-panel">
-           <div class="logo"><img src="../../../assets/images/logo-02-01.png" alt=""> </div>
-             <div class="text-intro">
-               <h1><span class="powerful">POWERFUL</span><br>Angular Material<br><span class="theme">Ecommerce Theme</span> </h1>
-             </div>
-             <div class="button">
-                 <a href="#" class="ped-btn left-btn">Buy Now</a>
-             </div>
-          </div>
-          <div fxFlex="100" fxFlex.gt-sm="50" class="right-panel">
-             <img src="../../../assets/images/demo/laptop.png" alt="">
-         </div>
+        <div class="demo-header-wrap" fxLayout='row' fxLayout.lt-md="column">
+            <div fxFlex="100" fxFlex.gt-sm="50" class="left-panel">
+                <div class="logo"><img src="../../../assets/images/logo-02-01.png" alt=""> </div>
+                  <div class="text-intro">
+                    <h1><span class="powerful">POWERFUL</span><br>Angular Material<br><span class="theme">Ecommerce Theme</span> </h1>
+                  </div>
+                  <div class="button">
+                      <a href="#" class="ped-btn left-btn">Buy Now</a>
+                  </div>
+               </div>
+               <div fxFlex="100" fxFlex.gt-sm="50" class="right-panel">
+                  <img src="../../../assets/images/demo/laptop.png" alt="">
+              </div>
+        </div>
       </div>
   </div>
   <div class="demo-showcase sec-padding">
      <div class="container">
-       <div class="demos">
-           <div fxFlex="100" fxFlex.gt-sm="33.3" class="item">
+       <div class="demos" fxLayout='row' fxLayout.lt-lg="column">
+           <div  class="item" fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
              <div class="first">
                  <img src="../../../assets/images/demo/s11.jpg" alt="">
              </div>
@@ -29,7 +31,7 @@
                  <a href="home/one" target="_blank" class="ped-btn left-btn">VIEW DEMO</a>
              </div>
            </div>
-           <div fxFlex="100" fxFlex.gt-sm="33.3" class="item middle">
+           <div  class="item middle" fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
                <div class="first">
                    <img src="../../../assets/images/demo/s1.jpg" alt="">
                </div>
@@ -40,7 +42,7 @@
                    <a href="home/two" target="_blank" class="ped-btn left-btn">VIEW DEMO</a>
                </div>
              </div>
-             <div fxFlex="100" fxFlex.gt-sm="33.3" class="item">
+             <div  class="item" fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
                  <div class="first">
                      <img src="../../../assets/images/demo/s1.jpg" alt="">
                  </div>
@@ -61,7 +63,7 @@
             <h2>Main Features</h2>
           </div>
            <div class="features">
-               <div class="row">
+               <div class="row" fxLayout='row' fxLayout.lt-md="column">
                    <div fxLayout="row" fxFlex="100" fxFlex.gt-sm="50" class="feature-item">
                        <div class="icon-box">
                          <img src="../../../assets/images/demo/angular.jpg" alt="">
@@ -81,7 +83,7 @@
                       </div>
                     </div>
                </div>
-             <div class="row">
+             <div class="row" fxLayout='row' fxLayout.lt-md="column">
                  <div fxLayout="row" fxFlex="100" fxFlex.gt-sm="50" class="feature-item">
                      <div class="icon-box">
                        <img src="../../../assets/images/demo/photoshop.jpg" alt="">
@@ -101,7 +103,7 @@
                     </div>
                   </div>
              </div>
-             <div class="row">
+             <div class="row" fxLayout='row' fxLayout.lt-md="column">
                  <div fxLayout="row" fxFlex="100" fxFlex.gt-sm="50" class="feature-item">
                      <div class="icon-box">
                        <img src="../../../assets/images/demo/angular_flex.jpg" alt="">
@@ -121,7 +123,7 @@
                     </div>
                   </div>
              </div>
-             <div class="row">
+             <div class="row" fxLayout='row' fxLayout.lt-md="column">
                  <div fxLayout="row" fxFlex="100" fxFlex.gt-sm="50" class="feature-item">
                      <div class="icon-box">
                        <img src="../../../assets/images/demo/compare.jpg" alt="">
