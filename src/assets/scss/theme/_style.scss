@@ -294,7 +294,11 @@ width: 100% !important;
     height: 100%;
     position: relative;
     z-index: 9;
-    padding-left: 294px;
+    /* padding-left: 294px; */
+    vertical-align: middle;
+    position: relative;
+    /* top: 58%; */
+    transform: translateY(84%);
     button {
       background: #ffc111;
       color: #333;
@@ -1123,6 +1127,23 @@ line-height: 23px;
   .ctn-box {
     box-sizing: content-box !important;
   }
+
+    .main-slider {
+      height: 461px;
+      .content {
+        padding-left: 20px;
+        padding-right: 400px;
+
+          height: 100%;
+          position: relative;
+          z-index: 9;
+          /* padding-left: 294px; */
+          vertical-align: middle;
+          position: relative;
+          /* top: 58%; */
+          transform: translateY(50%);
+      }
+    }
   .slider-categories {
     padding-right: 15px;
   .categories-wrap {
@@ -1402,7 +1423,16 @@ line-height: 23px;
       height: 461px;
       .content {
         padding-left: 20px;
-        padding-right: 380px;
+        padding-right: 400px;
+
+          height: 100%;
+          position: relative;
+          z-index: 9;
+          /* padding-left: 294px; */
+          vertical-align: middle;
+          position: relative;
+          /* top: 58%; */
+          transform: translateY(50%);
       }
       .swiper-pagination {
         .swiper-pagination-bullet {

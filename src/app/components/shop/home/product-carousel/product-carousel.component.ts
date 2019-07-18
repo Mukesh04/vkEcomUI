@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 import { ProductDialogComponent } from '../../products/product-dialog/product-dialog.component';
 import { CartService } from 'src/app/components/shared/services/cart.service';
 import { ProductService } from 'src/app/components/shared/services/product.service';
+import { WishlistService } from 'src/app/components/shared/services/wishlist.service';
 
 @Component({
   selector: 'app-product-carousel',
@@ -17,7 +18,7 @@ export class ProductCarouselComponent implements OnInit {
   @Output() onOpenProductDialog: EventEmitter<any> = new EventEmitter();
   @Input('product') product: Array<Product> = [];
   public config: SwiperConfigInterface = {};
-  constructor(private dialog: MatDialog, private router: Router, private cartService: CartService, private productService: ProductService) { }
+  constructor(private dialog: MatDialog, private router: Router, private cartService: CartService, private productService: ProductService, private wishlistService: WishlistService) { }
 
   ngOnInit() {
   }
@@ -70,6 +71,11 @@ export class ProductCarouselComponent implements OnInit {
     this.cartService.addToCart(product,quantity);
     console.log(product, quantity);
   }
+
+   // Add to wishlist
+   public addToWishlist(product: Product) {
+    this.wishlistService.addToWishlist(product);
+ }
 
     // Add to compare
     public addToCompare(product: Product) {
