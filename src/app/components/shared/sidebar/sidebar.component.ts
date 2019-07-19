@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SidebarMenuService } from './sidebar-menu.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  @Input('menuItems') menuItems;
+  @Input('menuParentId') menuParentId;
+  parentMenu:Array<any>;
+
+  constructor(private sidenavMenuService:SidebarMenuService) { }
 
   ngOnInit() {
+    this.parentMenu = this.menuItems.subscribe(item => item.menuParentId == this.menuParentId);
+    console.log(this.parentMenu, 'sgdfgdf');
+  }
+
+  onClick(menuId){
+    this.sidenavMenuService.toggleMenuItem(menuId);
+    this.sidenavMenuService.closeOtherSubMenus(this.menuItems, menuId);
   }
 
 }
