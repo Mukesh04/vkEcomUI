@@ -1,4 +1,20 @@
-<div *ngFor="let menu of parentMenu" class="menu-item">
+
+<a mat-list-item  [ngStyle]="{'padding-left': (depth * 12) + 'px'}" class="menu-list-item" (click)="onItemSelected(item)"
+[ngClass]="{'active': item.route ? router.isActive(item.route, true): false, 'expanded': expanded}">
+  {{item.displayName}}
+  <span fxFlex *ngIf="item.children && item.children.length">
+      <span fxFlex></span>
+      <mat-icon [@indicatorRotate]="expanded ? 'expanded': 'collapsed'">
+        expand_more
+      </mat-icon>
+    </span>
+</a>
+<div *ngIf="expanded">
+    <app-sidebar *ngFor="let child of item.children" [item]="child" [depth]="depth+1">
+    </app-sidebar>
+  </div>
+
+<!-- <div *ngFor="let menu of parentMenu" class="menu-item">
     <a *ngIf="menu.routerLink && !menu.hasSubMenu" mat-button
         fxLayout="row" fxLayoutAlign="start center"
         [routerLink]="[menu.routerLink]" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}"
@@ -21,4 +37,4 @@
     <div *ngIf="menu.hasSubMenu" class="sub-menu" [id]="'sub-menu-'+menu.id">
         <app-sidebar [menuItems]="menuItems" [menuParentId]="menu.id"></app-sidebar>
     </div>
-</div>
+</div> -->

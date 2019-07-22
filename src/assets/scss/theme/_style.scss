@@ -184,6 +184,9 @@ li {
   margin: 0 auto;
   padding: 0 15px !important;
 }
+.divider {
+  border-top: 1px solid $grey3;
+}
 .ml-10 {
   margin-left: 10px;
 }
@@ -3842,5 +3845,40 @@ font-weight: 400;
       padding-right: 0px;
       width: 100%;
     }
+  }
+}
+.sidenav  {
+  .divider {
+margin: 10px 0;
+  }
+
+}
+:host {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  width: 100%;
+
+  .mat-list-item.active {
+    background-color: mat-color($theme-main, 50);
+  }
+  &:hover,
+  &:focus {
+    >.mat-list-item:not(.expanded) {
+      background-color: mat-color($theme-main, 100) !important;
+    }
+  }
+}
+
+.mat-list-item {
+  padding: 10px 0;
+  display: flex;
+  width: auto;
+  .mat-list-item-content {
+    width: 100%;
+  }
+
+  .routeIcon {
+    margin-right: 40px;
   }
 }

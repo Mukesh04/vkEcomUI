@@ -29,14 +29,13 @@ export class HeaderComponent implements OnInit {
   shoppingCartItems: CartItem[] = [];
 
 
-  constructor(private cartService: CartService, public sidenavMenuService:SidebarMenuService) {
+  constructor(private cartService: CartService) {
     this.cartService.getItems().subscribe(shoppingCartItems => this.shoppingCartItems = shoppingCartItems);
   }
 
   ngOnInit() {
     this.currency = this.currencies[0];
     this.flag = this.flags[0];
-    this.sidenavMenuItems = this.sidenavMenuService.getSidenavMenuItems();
   }
 
   public changeCurrency(currency){
