@@ -4,6 +4,7 @@ import {CartItem} from "../../modals/cart-item";
 import {ProductService} from "../shared/services/product.service";
 import {CartService} from "../shared/services/cart.service";
 import { Router, NavigationEnd } from '@angular/router';
+import { SidebarMenuService } from '../shared/sidebar/sidebar-menu.service';
 
 @Component({
   selector: 'app-main',
@@ -11,15 +12,33 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./main.component.sass']
 })
 export class MainComponent implements OnInit {
+
+  public sidenavMenuItems:Array<any>;
+
+  public currencies = ['USD', 'EUR'];
+  public currency:any;
+  public flags = [
+    { name:'English', image: 'assets/images/flags/gb.svg' },
+    { name:'German', image: 'assets/images/flags/de.svg' },
+    { name:'French', image: 'assets/images/flags/fr.svg' },
+    { name:'Russian', image: 'assets/images/flags/ru.svg' },
+    { name:'Turkish', image: 'assets/images/flags/tr.svg' }
+  ]
+  public flag:any;
+
   products: Product[];
+
+  indexProduct: number;
+  shoppingCartItems: CartItem[] = [];
+
   public banners = [];
 
-  shoppingCartItems: CartItem[] = [];
   wishlistItems  :   Product[] = [];
 
   public url : any;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private cartService: CartService, public sidenavMenuService:SidebarMenuService) {
+    this.cartService.getItems().subscribe(shoppingCartItems => this.shoppingCartItems = shoppingCartItems);
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.url = event.url;
@@ -28,6 +47,15 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.currency = this.currencies[0];
+    this.flag = this.flags[0];
+    this.sidenavMenuItems = this.sidenavMenuService.getSidenavMenuItems();
   }
 
+  public changeCurrency(currency){
+    this.currency = currency;
+  }
+  public changeLang(flag){
+    this.flag = flag;
+  }
 }

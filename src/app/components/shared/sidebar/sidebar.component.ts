@@ -15,7 +15,7 @@ export class SidebarComponent implements OnInit {
   constructor(private sidenavMenuService:SidebarMenuService) { }
 
   ngOnInit() {
-    this.parentMenu = this.menuItems.subscribe(item => item.menuParentId == this.menuParentId);
+    this.parentMenu = this.menuItems.subscribe(item => item.parentId == this.menuParentId);
     console.log(this.parentMenu, 'sgdfgdf');
   }
 

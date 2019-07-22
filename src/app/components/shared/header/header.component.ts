@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/modals/product.model';
 import { CartItem } from 'src/app/modals/cart-item';
 import { CartService } from '../services/cart.service';
+import { SidebarMenuService } from '../sidebar/sidebar-menu.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ import { CartService } from '../services/cart.service';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent implements OnInit {
-
+  public sidenavMenuItems:Array<any>;
 
   public currencies = ['USD', 'EUR'];
   public currency:any;
@@ -25,17 +26,17 @@ export class HeaderComponent implements OnInit {
   products: Product[];
 
   indexProduct: number;
-  public sidenavMenuItems:Array<any>;
   shoppingCartItems: CartItem[] = [];
 
 
-  constructor(private cartService: CartService) {
+  constructor(private cartService: CartService, public sidenavMenuService:SidebarMenuService) {
     this.cartService.getItems().subscribe(shoppingCartItems => this.shoppingCartItems = shoppingCartItems);
   }
 
   ngOnInit() {
     this.currency = this.currencies[0];
     this.flag = this.flags[0];
+    this.sidenavMenuItems = this.sidenavMenuService.getSidenavMenuItems();
   }
 
   public changeCurrency(currency){
