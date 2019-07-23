@@ -187,7 +187,7 @@
     padding-left: 20px;
     padding-right: 305px;
 }
-  .carousel-2 .carousel-2-wrapper {
+  .carousel-2  .carousel-2-wrapper {
     max-width: 100%;
 }
   .details-wrapper {
@@ -239,6 +239,18 @@
     }
 }
 @media (max-width: 649px) {
+  .home-3-wrap {
+    .home3-sidebar {
+      padding-right: 0px;
+  }
+    .main-home3-wrapper {
+      padding-left: 0;
+      h3 {
+        
+        top: 30px;
+    }
+    } 
+  } 
   .home-header {
     .search-form {
       width: 95% ;
