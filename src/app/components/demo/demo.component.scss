@@ -12,7 +12,7 @@
         text-transform: capitalize;
         color: #ffc111;
         .powerful {
-          font-size: 78px;
+          font-size: 51px;
           font-weight: 300;
           letter-spacing: 7px;
           color: #333;
@@ -58,6 +58,9 @@
         margin: 0 auto;
 
         position: relative;
+        img {
+          max-width: 100%;
+        }
 
           .ped-btn {
               border: 1px solid #ffc111;
@@ -97,7 +100,7 @@
           height: 488px;
           overflow: hidden;
           position: relative;
-          width: 425px;
+          width: 100%;
           z-index: 99;
           border: 2px solid #F0F0F0;
         }
@@ -147,6 +150,58 @@
           }
 
         }
+    }
+  }
+}
+@media(max-width: 475px) {
+  .main-features {
+    .features-wrap {
+
+        .features {
+          .row {
+            margin-bottom: 0px !important;
+            .feature-item {
+              padding: 0;
+              margin-bottom: 30px;
+              .icon-box {
+                img {
+                  max-width: 100px;
+                }
+
+              }
+              .text-box {
+                padding: 0px 0 0 18px !important;
+               h4 {
+                font-size: 20px !important;
+                font-weight: 600;
+                margin-bottom: 10px;
+               }
+               p {
+               color: #333;
+               }
+              }
+            }
+          }
+
+        }
+    }
+  }
+  .text-intro {
+    h1 {
+
+      .powerful {
+        font-size: 45px !important;
+
+      }
+
+    }
+  }
+
+  .demo-header {
+
+    padding: 100px 0 100px 0 !important;
+    .left-panel {
+      margin-bottom: 20px !important;
     }
   }
 }
