@@ -306,8 +306,8 @@ width: 100% !important;
     /* top: 58%; */
     transform: translateY(84%);
     button {
-      background: #ffc111;
-      color: #333;
+      background: $theme-main;
+      color: $font-color;
       padding: 5px 33px;
       width: 200px;
       span {
@@ -319,14 +319,14 @@ width: 100% !important;
     h1{
       font-size: 48px;
       text-align: left;
-      color: #333;
+      color: $font-color;
       text-transform: uppercase;
       letter-spacing: 3px;
   }
   h3{
       font-size: 36px;
       text-align: left;
-      color: #333;
+      color: $font-color;
       margin-bottom: 30px;
       font-weight: 300;
       letter-spacing: 2px;
@@ -342,7 +342,7 @@ width: 100% !important;
 
 
 .swiper-pagination-bullet-active {
-  background: #ffc111 !important;
+  background: $theme-main !important;
 }
 
 
@@ -373,19 +373,19 @@ width: 100% !important;
 ****************************************/
 .info-bar{
   margin-top: 30px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid $grey6;
   .card-wrap{
     padding: 15px 0;
     .mat-card{
       height: 100px;
       box-shadow: none;
-      border-right: 1px solid #ebebeb;
+      border-right: 1px solid $grey6;
       &.no-bd {
         border-right: none;
       }
   }
   .mat-icon{
-    color: #333e48;
+    color: $font-color;
     font-size: 41px;
     margin-right: 15px;
 line-height: 23px;
@@ -412,7 +412,7 @@ line-height: 23px;
       }
      .welcome-message p {
         font-size: 13.5px;
-        color: #787c82;
+        color: $grey7;
     }
 
     /***************************************
@@ -459,11 +459,11 @@ line-height: 23px;
    }
    span {
      .mat-icon {
-       color: #ffc111;
+       color: $theme-main;
      }
    }
    .cur-icon {
-     color: #81858c !important;
+     color: $grey7 !important;
    }
   }
 }
@@ -528,14 +528,14 @@ line-height: 23px;
     right: -15px;
     top: 0;
     padding: 0 35px;
-    color: #fff;
+    color: $white;
     -webkit-transition: all 250ms ease-in-out;
     -moz-transition: all 250ms ease-in-out;
     -ms-transition: all 250ms ease-in-out;
     -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
     text-transform: uppercase;
-    background-color: #333;
+    background-color: $font-color;
     border-radius: 0 3px 3px 0;
     -webkit-border-radius: 0 3px 3px 0;
     text-shadow: 0 -1px 0 rgba(0,0,0,.3);
@@ -582,7 +582,7 @@ line-height: 23px;
       position: absolute;
       top: -10px;
       left: 30px;
-      background: #fff;
+      background: $white;
       height: 18px;
       width: 18px;
       line-height: 18px;
@@ -638,7 +638,7 @@ line-height: 23px;
           padding: 10px 0;
           .product {
             margin-right: 7px;
-            background: #f6f6f6;
+            background: $baners-background;
             border-radius: 3px;
           }
           .desc {
@@ -733,7 +733,7 @@ line-height: 23px;
         box-shadow: 2px 2px 6px 0px rgba(0,0,0,.1), 0 1px 1px 0 rgba(0,0,0,.0), 0 1px 3px 0 rgba(0,0,0,.12) !important;
         padding: 0;
         .product-img {
-          background: #f6f6f6;
+          background: $baners-background;
           img {
             max-width: 180px;
             margin-bottom: 12px;
@@ -1153,11 +1153,11 @@ line-height: 23px;
   .slider-categories {
     padding-right: 15px;
   .categories-wrap {
-    border: 1px solid #ddd;
+    border: 1px solid $grey8;
     .title {
-      background: #f5f5f5;
-    border-bottom: 1px solid #ddd;
-    color: #465157;
+      background: $baners-background;
+    border-bottom: 1px solid $grey-light;
+    color: $grey4;
     padding: 15px 20px 15px 10px;
     font-weight: 500;
     font-size: 14.5px;
@@ -1169,7 +1169,7 @@ line-height: 23px;
           a {
             padding-top: 13px;
     padding-bottom: 13px !important;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid $grey8;
     margin: 0 10px -1px;
           }
           .no-brd {
@@ -1181,8 +1181,8 @@ line-height: 23px;
     .btn-sale {
       margin: 20px 10px;
       button {
-        background: #ffc111;
-        color: #333;
+        background: $theme-main;
+        color: $font-color;
         padding: 5px 33px;
         width: 100%;
       }
@@ -1338,13 +1338,13 @@ line-height: 23px;
 ****************************************/
 .info-bar{
   margin-top: 30px;
-  border: 1px solid #ebebeb;
+  border: 1px solid $grey6;
   .card-wrap{
     padding: 15px 0;
     .mat-card{
       height: 100px;
       box-shadow: none;
-      border-right: 1px solid #ebebeb;
+      border-right: 1px solid $grey6;
       box-shadow: none !important;
       .content {
         p {
@@ -1357,7 +1357,7 @@ line-height: 23px;
       }
   }
   .mat-icon{
-    color: #ffc111;
+    color: $theme-main;
     font-size: 41px;
     margin-right: 10px;
     line-height: 65px;
@@ -1376,7 +1376,7 @@ line-height: 23px;
 ****************************************/
 .home-2-wrap {
   .products-section {
-    background: #f9f9f9;
+    background: $grey6;
  .products {
    padding: 0 !important;
 
@@ -1483,8 +1483,8 @@ line-height: 23px;
               text-transform: uppercase;
             }
             a {
-              border: 1px solid #ffc111;
-              color: #333e48 !important;
+              border: 1px solid $theme-main;
+              color: $font-color !important;
               cursor: pointer;
               display: inline-block;
               font-size: 13px;
@@ -1516,9 +1516,9 @@ line-height: 23px;
       border: 1px solid $grey-light;
       margin-bottom: 25px;
       .title {
-        background: #f5f5f5;
+        background: $baners-background;
       border-bottom: 1px solid $grey-light;
-      color: #465157;
+      color: $grey4;
       padding: 15px 20px 15px 10px;
       font-weight: 500;
       font-size: 14.5px;
@@ -1542,8 +1542,8 @@ line-height: 23px;
       .btn-sale {
         margin: 20px 10px;
         button {
-          background: #ffc111;
-          color: #333;
+          background: $theme-main;
+          color: $font-color;
           padding: 5px 33px;
           width: 100%;
         }
@@ -1565,7 +1565,7 @@ line-height: 23px;
             width: 100%;
             height: 0.0625rem;
             bottom: 0.34375rem;
-            background-color: #e5e5e5;
+            background-color: $grey6;
           }
           &::after {
             content: "";
@@ -1573,7 +1573,7 @@ line-height: 23px;
             position: absolute;
             width: 2.5rem;
             height: 0.125rem;
-            background-color: #333;
+            background-color: $font-color;
             bottom: 0.3125rem;
           }
         }
@@ -1664,17 +1664,17 @@ line-height: 23px;
         .newsletter-widget {
            input {
             height: 45px;
-            background: #ffffff;
+            background: $white;
             font-size: 15px;
             line-height: 45px;
-            border: 1px solid #e2e2e2;
+            border: 1px solid $grey6;
             border-radius: 4px;
             padding: 0 65px 0 20px;
-            color: #777777;
+            $grey: $grey;
            }
            .ped-btn-footer {
-            border: 1px solid #ffc111;
-            color: #333e48 !important;
+            border: 1px solid $theme-main;
+            color: $font-color !important;
             cursor: pointer;
             display: inline-block;
             font-size: 14px;
@@ -1685,7 +1685,7 @@ line-height: 23px;
             text-transform: uppercase;
             transition: all 0.4s ease 0s;
             z-index: 222;
-            background: #ffc111;
+            background: $theme-main;
             width: 100%;
             border-radius: 3px;
             line-height: 45px;
@@ -1776,7 +1776,7 @@ line-height: 23px;
         position: absolute;
         top: 33px;
         left: 35px;
-        
+
         font-size: 95%;
         z-index: 9999999999999;
         .subtitle {
@@ -1789,8 +1789,8 @@ line-height: 23px;
 
     }
     a {
-      border: 1px solid #ffc111;
-      color: #333e48 !important;
+      border: 1px solid $theme-main;
+      color: $font-color !important;
       cursor: pointer;
       display: inline-block;
       font-size: 13px;
@@ -1801,7 +1801,7 @@ line-height: 23px;
       text-transform: uppercase;
       transition: all 0.4s ease 0s;
       z-index: 222;
-      background: #ffc111;
+      background: $theme-main;
       width: 120px;
       border-radius: 3px;
       line-height: 40px;
@@ -1826,7 +1826,7 @@ line-height: 23px;
 
 
 .menu-container1 {
-  background: #f4f4f4;
+  background: $grey2;
    a.mat-button {
      text-transform: uppercase;
      color: $theme-main-dark;
@@ -1943,7 +1943,7 @@ line-height: 23px;
               width: 100%;
               height: 0.0625rem;
               bottom: 0.34375rem;
-              background-color: #e5e5e5;
+              background-color: $grey6;
             }
             &::after {
               content: "";
@@ -1951,7 +1951,7 @@ line-height: 23px;
               position: absolute;
               width: 2.5rem;
               height: 0.125rem;
-              background-color: #333;
+              background-color: $font-color;
               bottom: 0.3125rem;
             }
           }
@@ -3012,8 +3012,8 @@ line-height: 23px;
 }
 .product-pagination .ngx-pagination .current {
   padding: 4px 12px;
-  background: #ffc111;
-  color: #444;
+  background: $theme-main;
+  color: $grey4;
   cursor: default;
   border-radius: 2px;
   line-height: 22px;
@@ -3463,7 +3463,7 @@ line-height: 23px;
 
 
 .mat-radio-label-content {
-color: #999;
+color: $grey5;
 font-weight: 400;
 }
 

@@ -240,17 +240,45 @@
 }
 @media (max-width: 649px) {
   .home-3-wrap {
+    .main-home3-wrapper {
+      .home3-banner-wrap {
+        .banner {
+          height: 116px;
+          .text-wrap {
+            position: absolute;
+            top: 12px;
+            left: 15px;
+            /* font-size: 95%; */
+            .main {
+              font-size: 20px;
+            }
+            a {
+              margin-top: 7px;
+            }
+        }
+        img {
+          position: relative;
+          display: block;
+          height: 100%;
+
+          width: 100%;
+        }
+        }
+      }
+    }
+  }
+  .home-3-wrap {
     .home3-sidebar {
       padding-right: 0px;
   }
     .main-home3-wrapper {
       padding-left: 0;
       h3 {
-        
+
         top: 30px;
     }
-    } 
-  } 
+    }
+  }
   .home-header {
     .search-form {
       width: 95% ;
