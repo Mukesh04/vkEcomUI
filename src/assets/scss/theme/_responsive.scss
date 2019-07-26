@@ -49,6 +49,15 @@
 
 }
 @media (min-width: 600px) and (max-width: 959px) {
+  .checkout {
+    .billing-details {
+      padding-right: 0 !important;
+      margin-bottom: 20px;
+    }
+    .mainOrder-wrapper {
+      padding-left: 0;
+    }
+  }
   .carousel-2 .carousel-2-wrapper {
     max-width: 100%;
 }
@@ -183,6 +192,16 @@
   }
 }
 @media(max-width: 768px) {
+.checkout {
+  .billing-details {
+    padding-right: 0 !important;
+    margin-bottom: 20px;
+  }
+  .mainOrder-wrapper {
+    padding-left: 0;
+  }
+}
+
   .carousel-2 .carousel-2-wrapper .main-slider .content {
     padding-left: 20px;
     padding-right: 305px;
@@ -393,6 +412,39 @@
       }
 
 @media (max-width: 480px) {
+ 
+  .checkout {
+    .mainOrder-wrapper {
+      .main-order {
+        padding-left: 10px;
+        padding-right: 10px;
+        ul.total-amount {
+          .shipping {
+            /* width: 35%; */
+            /* float: right; */
+            width: unset;
+            float: unset;
+            display: flex;
+            flex-direction: column;
+            .shopping-option {
+              .mat-radio-group {
+                display: flex;
+    flex-direction: column;
+              }
+            }
+        }
+        } 
+        ul.price-list {
+          li {
+            line-height: 29px !important;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        } 
+      } 
+    } 
+  } 
   .carousel-3 {
     .carousel-2-wrapper {
       max-width: 100% !important;

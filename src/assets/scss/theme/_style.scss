@@ -114,10 +114,10 @@ h6 {
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
 
 }
-.overlay {
-  background-color: rgba(255, 193, 17, 0.8) !important;
-  position: fixed;
-}
+// .overlay {
+//   background-color: rgba(255, 193, 17, 0.8) !important;
+//   position: fixed;
+// }
 .mat-form-field.mat-focused .mat-form-field-label{color:$theme-main}
 .mat-form-field.mat-focused .mat-form-field-ripple{background-color:$theme-main}
 .mat-expansion-indicator::after, .mat-expansion-panel-header-description {
@@ -427,7 +427,7 @@ line-height: 23px;
 
      .widget-text {
        a {
-         color: $grey7;
+         color: $grey3;
          text-decoration: none;
          font-size: 13px;
          transition: .4s;
@@ -1826,7 +1826,7 @@ line-height: 23px;
 
 
 .menu-container1 {
-  background: $grey2;
+  background: $grey9;
    a.mat-button {
      text-transform: uppercase;
      color: $theme-main-dark;
@@ -2036,7 +2036,7 @@ line-height: 23px;
                     opacity: 0;
                     transition: all 0.5s ease;
                     a {
-                      color: $grey3;
+                      color: $grey10;
                       cursor: pointer;
                       transition: 0.5s ease;
                       margin-bottom: 5px;
@@ -3151,26 +3151,30 @@ line-height: 23px;
 
 .about-us-wrapper {
   .about-section {
-    .about-us-intro {
-      h2 {
-        margin-bottom: 20px;
-      }
-      p {
-        line-height: 26px;
+    .left-info-panel {
+      overflow: hidden;
+      .about-us-intro {
+        h2 {
+          margin-bottom: 20px;
         }
-        .accordions {
-          margin-top: 20px;
-          .mat-expansion-panel {
-           margin-bottom: 10px;
-           box-shadow: none;
-           border: 1px solid $grey6;
-           border-radius: 5px;
-           h4 {
-             font-weight: 500;
-           }
+        p {
+          line-height: 26px;
           }
-        }
+          .accordions {
+            margin-top: 20px;
+            .mat-expansion-panel {
+             margin-bottom: 10px;
+             box-shadow: none;
+             border: 1px solid $grey6;
+             border-radius: 5px;
+             h4 {
+               font-weight: 500;
+             }
+            }
+          }
+      }
     }
+   
   }
   .our-values {
     background: $baners-background;
@@ -3255,7 +3259,7 @@ line-height: 23px;
                          li {
                           padding: 0 12px;
                            i {
-                            color: $white;
+                            color: $font-color;
                             font-size: 16px;
                             line-height: 35px;
                             display: block;
@@ -3294,7 +3298,7 @@ line-height: 23px;
                    }
                 }
                 .text-box {
-                  background: rgba(47, 56, 61, 1);
+                  background: $grey4;
                   h4 {
                     color: $white;
                   }
