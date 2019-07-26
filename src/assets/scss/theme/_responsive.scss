@@ -408,6 +408,36 @@
     }
     }
 
+      .mat-toolbar-row {
+        height: 100% !important;
+        padding: 15px !important;
+    }
+    .cdk-global-overlay-wrapper {
+      .product-dialog {
+        max-width: 80vw !important;
+        min-width: 90% !important;
+      }
+    }
+    .product-dialog {
+      .mat-dialog-content {
+        max-width: 73vw !important;
+      }
+    }
+    .product-dialog {
+      .mat-dialog-content {
+        max-width: 52vw;
+        .product-right {
+          padding: 0px !important;
+          .buttons {
+            .btn-project {
+              padding: 3px 12px !important;
+            }
+          }
+        }
+      }
+
+    }
+
 
       }
 

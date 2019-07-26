@@ -18,7 +18,7 @@ export class ProductDialogComponent implements OnInit {
   public selectedColor      :   any = '';
   public selectedSize       :   any = '';
 
-  constructor(private router: Router, private productsService: ProductService, private cartService: CartService, public dialogRef: MatDialogRef<ProductDialogComponent>, @Inject(MAT_DIALOG_DATA) public product: Product) { }
+  constructor(private router: Router, public productsService: ProductService, private cartService: CartService, public dialogRef: MatDialogRef<ProductDialogComponent>, @Inject(MAT_DIALOG_DATA) public product: Product) { }
 
   ngOnInit() {
     this.productsService.getProducts().subscribe(product => this.products = product);
