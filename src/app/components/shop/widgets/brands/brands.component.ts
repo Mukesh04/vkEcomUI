@@ -8,7 +8,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class BrandsComponent implements OnInit {
 
-  brands: string[] = ['all', 'Lenovo', 'Dell', 'Hp', 'Lg', 'Samsung'];
+  // brands: string[] = ['all', 'Lenovo', 'Dell', 'Dell', 'Lg', 'Samsung'];
+  brands: string[] = ['all', 'Brand-1', 'Brand-2', 'Brand-3', 'Brand-4', 'Brand-5'];
 
   @Output() brandChanged = new EventEmitter();
   constructor() { }

@@ -296,42 +296,46 @@ width: 100% !important;
 ****************************************/
 .main-slider{
   height: 550px;
-  .content{
+  .sl-wrap {
+    position: relative;
     height: 100%;
-    position: relative;
-    z-index: 9;
-    /* padding-left: 294px; */
-    vertical-align: middle;
-    position: relative;
-    /* top: 58%; */
-    transform: translateY(84%);
-    button {
-      background: $theme-main;
-      color: $font-color;
-      padding: 5px 33px;
-      width: 200px;
-      span {
-        font-size: 14px;
-    font-weight: 700;
-        text-transform: uppercase;
+    .content{
+      height: 100%;
+      position: relative;
+      z-index: 9;
+      /* padding-left: 294px; */
+      vertical-align: middle;
+      position: relative;
+      /* top: 58%; */
+      button {
+        background: $theme-main;
+        color: $font-color;
+        padding: 5px 33px;
+        width: 200px;
+        span {
+          font-size: 14px;
+      font-weight: 700;
+          text-transform: uppercase;
+        }
       }
+      h1{
+        font-size: 48px;
+        text-align: left;
+        color: $font-color;
+        text-transform: uppercase;
+        letter-spacing: 3px;
     }
-    h1{
-      font-size: 48px;
-      text-align: left;
-      color: $font-color;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+    h3{
+        font-size: 36px;
+        text-align: left;
+        color: $font-color;
+        margin-bottom: 30px;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+    }
   }
-  h3{
-      font-size: 36px;
-      text-align: left;
-      color: $font-color;
-      margin-bottom: 30px;
-      font-weight: 300;
-      letter-spacing: 2px;
-  }
-  }
+  
   .slide-item{
     height: 100%;
     background-size: cover;
@@ -1136,19 +1140,24 @@ line-height: 23px;
 
     .main-slider {
       height: 461px;
-      .content {
-        padding-left: 20px;
-        padding-right: 400px;
-
-          height: 100%;
-          position: relative;
-          z-index: 9;
-          /* padding-left: 294px; */
-          vertical-align: middle;
-          position: relative;
-          /* top: 58%; */
-          transform: translateY(50%);
+      .sl-wrap {
+        position: relative;
+        height: 100%;
+        .content {
+          padding-left: 20px;
+          padding-right: 400px;
+  
+            height: 100%;
+            position: relative;
+            z-index: 9;
+            /* padding-left: 294px; */
+            vertical-align: middle;
+            position: relative;
+            /* top: 58%; */
+            transform: none;
+        }
       }
+      
     }
   .slider-categories {
     padding-right: 15px;
@@ -1425,21 +1434,26 @@ line-height: 23px;
   }
   padding: 25px 0;
   .carousel-2-wrapper {
+  //  max-width: 100% !important;
     .main-slider {
       height: 461px;
-      .content {
-        padding-left: 20px;
-        padding-right: 400px;
-
-          height: 100%;
-          position: relative;
-          z-index: 9;
-          /* padding-left: 294px; */
-          vertical-align: middle;
-          position: relative;
-          /* top: 58%; */
-          transform: translateY(50%);
+      .sl-wrap {
+        position: relative;
+        height: 100%;
+        .content {
+          padding-left: 20px;
+          padding-right: 400px;
+  
+            height: 100%;
+            position: relative;
+            z-index: 9;
+            /* padding-left: 294px; */
+            vertical-align: middle;
+            position: relative;
+            /* top: 58%; */
+        }
       }
+     
       .swiper-pagination {
         .swiper-pagination-bullet {
           width: 20px;
