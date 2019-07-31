@@ -25,6 +25,7 @@ import { ProductCarouselThreeComponent } from './home-three/product-carousel-thr
 import { BrandsComponent } from './widgets/brands/brands.component';
 import { CategoriesComponent } from './widgets/categories/categories.component';
 import { PopularProductsComponent } from './widgets/popular-products/popular-products.component';
+import { HomeFourComponent } from './home-four/home-four.component';
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { PopularProductsComponent } from './widgets/popular-products/popular-pro
     BrandsComponent,
     CategoriesComponent,
     PopularProductsComponent,
+    HomeFourComponent,
   ],
   imports: [
     CommonModule,

@@ -1,5 +1,5 @@
 <mat-toolbar-row fxHide fxShow.gt-sm class="container" fxLayout="row"  fxLayout.xs="row" fxLayoutAlign="space-between center">
-  <div class="" fxLayout="row" fxHide fxShow.gt-sm>
+  <div class="main-menu" fxLayout="row" fxHide fxShow.gt-sm>
       <a  mat-button class="mat-button" [matMenuTriggerFor]="animals">Home<mat-icon class="caret">arrow_drop_down</mat-icon></a>
       <mat-menu #animals="matMenu" [overlapTrigger]="false" class="app-dropdown">
         <a mat-menu-item [routerLink]="['/home/one']" routerLinkActive="router-link-active" >Home-1</a>

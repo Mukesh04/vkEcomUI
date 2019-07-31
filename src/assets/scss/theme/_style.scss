@@ -11,7 +11,19 @@
      - Home baners section styles
      - Home vertical-product section styles
      - Home footer section styles
-* 2. HOME-2 STYLES
+* 3. HOME-2 STYLES
+     - Carousel styles
+     - Header-2 styles
+     - Info bar styles
+     - Shopping widget styles
+     - Home-2 product section styles
+* 4. HOME-3 STYLES
+     - Carousel styles
+     - Header-2 styles
+     - Info bar styles
+     - Shopping widget styles
+     - Home-2 product section styles
+* 4. HOME-4 STYLES
      - Carousel styles
      - Header-2 styles
      - Info bar styles
@@ -2145,6 +2157,150 @@ line-height: 23px;
       box-shadow: none !important;
     }
   }
+    /***************************************
+    ***************************************
+    ***************************************
+*  HOME - 4 STYLES
+****************************************
+****************************************
+****************************************/
+/***************************************
+*  Carousel-4 styles
+****************************************/
+
+.home-header-three {
+  background: $white;
+  border-top: 1px solid #e5e5e5;
+.logo {
+    padding: 25px 0;
+}
+  .search-form {
+    width: 80%;
+    margin: 0 auto;
+    /* margin-top: 6px; */
+    padding: 13px 0;
+    .form-wrap {
+      background-color: transparent;
+      white-space: nowrap;
+      zoom: 1;
+      width: 100%;
+      margin: 0;
+      position: relative;
+      background: #444;
+      background: rgba(0, 0, 0, 0.2);
+      input {
+        border-style: none;
+        border-width: 1px;
+        border-radius: 3px;
+        border: 2px solid $theme-main;
+        transition: box-shadow 0.3s ease-out;
+        height: 40px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 0 0 12px;
+        float: left;
+        outline: none;
+        box-shadow: none;
+    }
+    .btn-search {
+      overflow: visible;
+      position: absolute;
+      border: 0;
+      margin: 0;
+      cursor: pointer;
+      height: 100%;
+      min-width: 50px;
+      right: -15px;
+      top: 0;
+      padding: 0 35px;
+      color: #333;
+      transition: all 250ms ease-in-out;
+      text-transform: uppercase;
+      background-color: $theme-main;
+      border-radius: 0 3px 3px 0;
+      -webkit-border-radius: 0 3px 3px 0;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: none;
+      -webkit-appearance: none;
+  }
+    }
+  }
+  .call-bucket-wrap {
+    .info-message-icon {
+      .icon {
+        mat-icon {
+          font-size: 35px;
+          /* color: #fff; */
+          display: block;
+          float: left;
+          height: 49px;
+          margin: 0 16px 0 0;
+      }
+      }
+      .info-text {
+        p {
+          font-size: 12px;
+          line-height: 0px;
+          margin-bottom: 7px;
+        }
+        span {
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+  .main-menu-wrapper-3 {
+
+      .top-navbar {
+        background: #ffffff;
+        .flex-row-button {
+          .mat-button-wrapper {
+            display: flex;
+          flex-direction: row;
+          align-items: center;
+          .top-cart {
+            span {
+              font-size: 15px;
+          }
+          }
+            .cart-count-wrapper {
+              position: absolute;
+              top: -10px;
+              left: 30px;
+              background: $theme-main;
+              height: 18px;
+              width: 18px;
+              line-height: 18px;
+              border-radius: 50%;
+              font-size: 11px;
+          }
+          }
+        }
+      }
+
+
+  }
+  }
+
+}
+
+.menu-container2 {
+  background: $white;
+  border-top: 1px solid #e5e5e5;
+  .main-menu {
+    margin: 0 auto;
+}
+}
+.main-topbar-four {
+  background: $white !important;
+  max-height: 50px;
+  min-height: 50px !important;
+}
+
+
+
+
+
 
 
 /***************************************

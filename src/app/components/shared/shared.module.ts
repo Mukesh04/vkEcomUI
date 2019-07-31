@@ -32,6 +32,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { BannersComponent } from './banners/banners.component';
 import { HeaderTwoComponent } from './header-two/header-two.component';
 import { ShoppingWidgetsComponent } from './shopping-widgets/shopping-widgets.component';
+import { HeaderThreeComponent } from './header-three/header-three.component';
 
 
 
@@ -44,7 +45,8 @@ import { ShoppingWidgetsComponent } from './shopping-widgets/shopping-widgets.co
     OrderByPipe,
     BannersComponent,
     HeaderTwoComponent,
-    ShoppingWidgetsComponent
+    ShoppingWidgetsComponent,
+    HeaderThreeComponent
   ],
   imports: [
     CommonModule,
@@ -97,6 +99,7 @@ import { ShoppingWidgetsComponent } from './shopping-widgets/shopping-widgets.co
     BannersComponent,
     FlexLayoutModule,
     HeaderTwoComponent,
+    HeaderThreeComponent,
     ShoppingWidgetsComponent
   ],
   providers: [

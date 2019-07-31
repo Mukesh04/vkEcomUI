@@ -12,7 +12,7 @@
       </mat-sidenav>
 
 
-      <mat-toolbar class="main-topbar">
+      <mat-toolbar class="main-topbar main-topbar-four">
           <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center" class="top-bar container" >
                   <span fxHide="false" fxHide.gt-sm   >
                       <button mat-icon-button (click)="start.toggle()">
@@ -68,9 +68,9 @@
         </mat-toolbar>
 
 
-  <app-header *ngIf="url != '/home/two'"></app-header>
-  <app-header-two *ngIf="url == '/home/two'"></app-header-two>
-
+  <app-header *ngIf="url == '/home/one' || url == '/home/three'"></app-header>
+  <app-header-two *ngIf="url == '/home/two'  "></app-header-two>
+  <app-header-three *ngIf="url == '/home/four' || url == '/home/four'"></app-header-three>
   <router-outlet></router-outlet>
 
   <app-footer></app-footer>
