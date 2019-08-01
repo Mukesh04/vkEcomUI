@@ -2170,7 +2170,7 @@ line-height: 23px;
 
 .home-header-three {
   background: $white;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $baners-background;
 .logo {
     padding: 25px 0;
 }
@@ -2292,16 +2292,62 @@ line-height: 23px;
 }
 }
 .main-topbar-four {
-  background: $white !important;
+  background: $baners-background;
   max-height: 50px;
   min-height: 50px !important;
+  .top-bar {
+    .widget-text {
+      a {
+        color: $font-color;
+        
+      }
+    } 
+  } 
 }
 
 
 
 
-
-
+    /***************************************
+*  Home-2 info bar styles
+****************************************/
+.info-bar-four{
+  margin-top: 0px;
+  border: none;
+  background: $baners-background;
+  .card-wrap{
+    padding: 15px 0;
+    .mat-card{
+      height: 100px;
+      box-shadow: none;
+      border-right: 1px solid $grey6;
+      box-shadow: none !important;
+      background: transparent;
+      .content {
+        p {
+          font-weight: 600;
+        font-size: 14.5px;
+        }
+      }
+      &.no-bd {
+        border-right: none;
+      }
+  }
+  .mat-icon{
+    color: $theme-main;
+    font-size: 41px;
+    margin-right: 10px;
+    line-height: 65px;
+    clear: both;
+    overflow: hidden;
+    /* display: block; */
+    width: auto;
+    height: 100%;
+    /* vertical-align: middle; */
+    padding: 0 3px;
+  }
+    }
+}
 
 /***************************************
 *  Popular product page styles
