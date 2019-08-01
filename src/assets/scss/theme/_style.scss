@@ -1789,8 +1789,8 @@ line-height: 23px;
    h3 {
     margin-bottom: 0;
     display: inline-block;
-    font-size: 23px;
-    font-weight: 580;
+    font-size: 22px;
+    font-weight: 500;
     position: absolute;
     top: 69px;
    }
@@ -2284,7 +2284,7 @@ line-height: 23px;
 
 }
 
-.menu-container2 {
+.menu-container4 {
   background: $white;
   border-top: 1px solid #e5e5e5;
   .main-menu {
@@ -2299,17 +2299,17 @@ line-height: 23px;
     .widget-text {
       a {
         color: $font-color;
-        
+
       }
-    } 
-  } 
+    }
+  }
 }
 
 
 
 
     /***************************************
-*  Home-2 info bar styles
+*  Home-4 info bar styles
 ****************************************/
 .info-bar-four{
   margin-top: 0px;
@@ -2347,6 +2347,46 @@ line-height: 23px;
     padding: 0 3px;
   }
     }
+}
+
+
+    /***************************************
+*  Home-4 products styles
+****************************************/
+
+ .products {
+  .products-four {
+    h3 {
+      font-size: 22px;
+      font-weight: 500;
+      text-align: center;
+      position: relative;
+      padding-bottom: 20px;
+      &::before {
+        content: "";
+        left: 29%;
+        position: absolute;
+        width: 43%;
+        height: 0.0625rem;
+        bottom: 0.34375rem;
+        background-color: rgba(0,0,0,.08);
+    }
+    &::after {
+      content: "";
+    left: 48.5%;
+    position: absolute;
+    width: 2.5rem;
+    height: 0.125rem;
+    background-color: $dark-font;
+    bottom: 0.3125rem;
+  }
+    }
+  }
+ }
+
+
+ .featured-products-wrap {
+  background: $background;
 }
 
 /***************************************

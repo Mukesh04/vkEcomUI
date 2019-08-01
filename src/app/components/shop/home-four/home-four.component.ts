@@ -59,6 +59,8 @@ export class HomeFourComponent implements OnInit {
  )
  this.currency = this.currencies[0];
   this.flag = this.flags[0];
+
+
 }
 
 

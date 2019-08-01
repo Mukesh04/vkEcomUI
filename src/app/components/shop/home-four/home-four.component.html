@@ -1,6 +1,6 @@
 <app-main-carousel [slides]="slides"></app-main-carousel>
 <div class="home-1-wrap">
-        
+
         <div fxLayout="row wrap" class="info-bar-four">
             <div class="container">
                 <div class="card-wrap" fxFlex="100" fxFlex.gt-md="25" fxFlex.gt-xs="50">
@@ -42,9 +42,33 @@
             </div>
               </div>
     <div class="container">
-        
-       
+        <div class="products sec-padding">
+          <div class="products-four">
+
+              <h3>POPULAR ITEMS</h3>
+              <app-product-carousel [product]="products | slice:0:8"></app-product-carousel>
+
+          </div>
+
+        </div>
+        </div>
+        <div class="featured-products-wrap">
+            <div class="container">
+                <div class="products sec-padding bg">
+                        <div class="products-four">
+
+                            <h3>FEATURED ITEMS</h3>
+                            <app-product-carousel [product]="products | slice:8:16"></app-product-carousel>
+
+                        </div>
+                    </div>
+
+                  </div>
+        </div>
+
+          <div class="container">
         <app-product-vertical [products]="products"></app-product-vertical>
-  
-      </div>
+        </div>
+
+
   </div>
