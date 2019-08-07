@@ -12,7 +12,7 @@ import { CartService } from '../../shared/services/cart.service';
   styleUrls: ['./home-four.component.sass']
 })
 export class HomeFourComponent implements OnInit {
-
+  public banners = [];
   public currencies = ['USD', 'EUR'];
   public currency:any;
   public flags = [
@@ -31,7 +31,6 @@ export class HomeFourComponent implements OnInit {
   wishlistItems  :   Product[] = [];
 
 
-  public banners = [];
   public slides = [
     { title: 'Huge sale', subtitle: 'Up to 70%', image: 'assets/images/carousel/banner1.jpg' },
     { title: 'Biggest discount', subtitle: 'Check the promotion', image: 'assets/images/carousel/banner2.jpg' },
@@ -50,6 +49,8 @@ export class HomeFourComponent implements OnInit {
     .subscribe(
       data => this.banners = data
     );
+
+
 
  this.productService.getProducts()
  .subscribe(

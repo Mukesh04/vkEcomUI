@@ -33,6 +33,9 @@ import { BannersComponent } from './banners/banners.component';
 import { HeaderTwoComponent } from './header-two/header-two.component';
 import { ShoppingWidgetsComponent } from './shopping-widgets/shopping-widgets.component';
 import { HeaderThreeComponent } from './header-three/header-three.component';
+import { BannersFourComponent } from './banners-four/banners-four.component';
+import { BlogSectionComponent } from './blog-section/blog-section.component';
+import { BannerPromotionComponent } from './banner-promotion/banner-promotion.component';
 
 
 
@@ -46,7 +49,10 @@ import { HeaderThreeComponent } from './header-three/header-three.component';
     BannersComponent,
     HeaderTwoComponent,
     ShoppingWidgetsComponent,
-    HeaderThreeComponent
+    HeaderThreeComponent,
+    BannersFourComponent,
+    BlogSectionComponent,
+    BannerPromotionComponent
   ],
   imports: [
     CommonModule,
@@ -100,7 +106,12 @@ import { HeaderThreeComponent } from './header-three/header-three.component';
     FlexLayoutModule,
     HeaderTwoComponent,
     HeaderThreeComponent,
-    ShoppingWidgetsComponent
+    ShoppingWidgetsComponent,
+    BannersFourComponent,
+    BlogSectionComponent,
+    BannerPromotionComponent
+
+
   ],
   providers: [
     ProductService,

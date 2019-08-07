@@ -50,6 +50,7 @@
 }
 
 @media(min-width: 960px) and (max-width: 960px) {
+  
   .main-home3-wrapper {
     padding-left: 0 !important;
     .info-bar {
@@ -93,6 +94,7 @@
   }
 }
 @media(min-width: 961px) {
+  
   .carousel-3 {
     .carousel-2-wrapper {
 
@@ -113,6 +115,17 @@
   }
 }
 @media(max-width: 959px) {
+  .details-wrapper {
+    .product-right {
+      padding: 0;
+      margin-top: 25px;
+  }
+  } 
+  .left-sidebar-wrapper {
+    .all-products {
+      padding-left: 0;
+      }
+  }
   .carousel-3 {
     .carousel-2-wrapper {
       .main-slider {
@@ -228,6 +241,7 @@
   }
 }
 @media (min-width: 769px) and (max-width: 991px){
+  
   .home-3-wrap {
     .main-home3-wrapper {
       .home3-banner-wrap {
@@ -308,6 +322,11 @@
           margin-bottom: 0 ;
       }
 
+  }
+  .home-header-three {
+    .logo {
+     margin: 0 auto;
+    }
   }
   .demo-wrapper {
     .demo-showcase {
@@ -465,7 +484,7 @@
   .blog-list-wrapper {
     .sidebar {
       padding-left: 0px;
-      margin-top: 73px;
+      margin-top: 0px;
   }
   }
   .blog-details {
@@ -491,13 +510,19 @@
       padding-right: 7px;
      }
      .popular-products {
-      padding-left: 7px;
+      padding-left: 0px;
      }
    }
     }
   }
 }
 @media(max-width: 768px) {
+  
+  .left-sidebar-wrapper {
+    .all-products {
+      padding-left: 0;
+      }
+  } 
   .home-header {
     .logo {
       margin: 0 auto;
@@ -509,6 +534,11 @@
       margin: 0 auto;
       margin-bottom: 0;
   }
+  }
+  .home-header-three {
+    .logo {
+     margin: 0 auto;
+    }
   }
   .home-3-wrap {
     .main-home3-wrapper {
@@ -630,6 +660,12 @@
         margin-bottom: 0 ;
     }
     }
+    .home-header-three {
+      .logo {
+       margin: 0 auto;
+       margin-bottom: 0 ;
+      }
+    }
     .main-slider {
       .content {
         padding-left: 10px ;
@@ -693,9 +729,29 @@
     padding: 0 ;
     }
   }
+  .home-header-three {
+    .search-form {
+      width: 95% ;
+    padding: 0 ;
+    }
+  }
 }
 
 @media (max-width: 599px) {
+  .info-bar-four-wrapper{
+    border-bottom: none;
+    .info-bar-four {
+      border: none;
+      .card-wrap {
+        padding: 0;
+        border-bottom: 1px solid $grey6;
+        .mat-card {
+  border: none;
+        }
+      } 
+    } 
+  }
+ 
   .info-bar {
     .card-wrap {
       padding: 0 !important;

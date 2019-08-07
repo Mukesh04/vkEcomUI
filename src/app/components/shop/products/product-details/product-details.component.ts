@@ -13,8 +13,7 @@ import { SwiperDirective, SwiperConfigInterface } from 'ngx-swiper-wrapper';
   styleUrls: ['./product-details.component.sass']
 })
 export class ProductDetailsComponent implements OnInit {
-  
-
+ zoomViewer: any;
   public config: SwiperConfigInterface={};
 
   public product            :   Product = {};
@@ -120,27 +119,29 @@ getRelatedProducts() {
       this.router.navigate(['/pages/checkout']);
  }
 
-// public onMouseMove(e){
-//   if(window.innerWidth >= 1280){
-//     var image, offsetX, offsetY, x, y, zoomer;
-//     image = e.currentTarget;
-//     offsetX = e.offsetX;
-//     offsetY = e.offsetY;
-//     x = offsetX/image.offsetWidth*100;
-//     y = offsetY/image.offsetHeight*100;
-//     zoomer = this.zoomViewer.nativeElement.children[0];
-//     if(zoomer){
-//       zoomer.style.backgroundPosition = x + '% ' + y + '%';
-//       zoomer.style.display = "block";
-//       zoomer.style.height = image.height + 'px';
-//       zoomer.style.width = image.width + 'px';
-//     }
-//   }
-// }
+ public onMouseMove(e){
+  if(window.innerWidth >= 1280){
+    var image, offsetX, offsetY, x, y, zoomer;
+    image = e.currentTarget; 
+    offsetX = e.offsetX;
+    offsetY = e.offsetY;
+    x = offsetX/image.offsetWidth*100;
+    y = offsetY/image.offsetHeight*100;
+    zoomer = this.zoomViewer.nativeElement.children[0];
+    if(zoomer){
+      zoomer.style.backgroundPosition = x + '% ' + y + '%';
+      zoomer.style.display = "block";
+      zoomer.style.height = image.height + 'px';
+      zoomer.style.width = image.width + 'px';
+    }
+  }
+}
 
-// public onMouseLeave(event){
-//   this.zoomViewer.nativeElement.children[0].style.display = "none";
-// }
+public onMouseLeave(event){
+  this.zoomViewer.nativeElement.children[0].style.display = "none";
+}
+
+
 
 
 
