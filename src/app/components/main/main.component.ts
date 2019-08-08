@@ -259,7 +259,7 @@ export class MainComponent implements OnInit {
     }
   ];
 
-  constructor(private router: Router, private cartService: CartService, public sidenavMenuService:SidebarMenuService) {
+  constructor(public router: Router, private cartService: CartService, public sidenavMenuService:SidebarMenuService) {
     this.cartService.getItems().subscribe(shoppingCartItems => this.shoppingCartItems = shoppingCartItems);
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {

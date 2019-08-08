@@ -153,6 +153,22 @@
     }
   }
 }
+@media(max-width: 1280px) {
+  .demo-wrapper {
+    .demo-showcase {
+      .demos {
+        .item.middle {
+          margin: 0 auto;
+      }
+      .item {
+
+          margin-bottom: 30px;
+
+      }
+      }
+    }
+  }
+}
 @media(max-width: 475px) {
   .main-features {
     .features-wrap {

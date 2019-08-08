@@ -111,7 +111,6 @@ import { BannerPromotionComponent } from './banner-promotion/banner-promotion.co
     BlogSectionComponent,
     BannerPromotionComponent
 
-
   ],
   providers: [
     ProductService,
