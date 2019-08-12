@@ -97,10 +97,10 @@
         .first {
           background: #fff none repeat scroll 0 0;
           margin-bottom: 0;
-          height: 488px;
+          height: 490px;
           overflow: hidden;
           position: relative;
-          width: 100%;
+          width: auto;
           z-index: 99;
           border: 2px solid #F0F0F0;
         }
@@ -114,9 +114,16 @@
             font-weight: 600;
           }
         }
-
+   .sec {
+     margin: 0 auto !important;
+   }
       }
 
+    }
+    .demo-row-sec {
+      align-content: center;
+      .item {
+      }
     }
   }
   .main-features {
@@ -162,7 +169,7 @@
       }
       .item {
 
-          margin-bottom: 30px;
+          margin-bottom: 50px;
 
       }
       }

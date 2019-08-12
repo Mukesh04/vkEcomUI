@@ -1036,7 +1036,7 @@ line-height: 23px;
         a {
 
           i {
-            color: $theme-main;
+            color: $theme-main-dark;
           }
         }
 
@@ -1098,13 +1098,14 @@ line-height: 23px;
         .tel-box {
           .icon {
             i {
-              color: $theme-main;
+              color: $theme-main-dark;
               display: block;
               line-height: 27px;
               vertical-align: middle;
               margin-right: 5px;
               width: 18px;
               text-align: center;
+              font-size: 18px;
             }
           }
           .text {
@@ -3291,7 +3292,7 @@ line-height: 23px;
   .swiper-container {
     .swiper-wrapper {
       img.img-fluid {
-        margin: 0 auto;
+        margin: auto;
         max-width: 100%;
       }
     }
