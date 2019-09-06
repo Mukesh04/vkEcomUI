@@ -126,6 +126,83 @@
       }
     }
   }
+  .color-showcase {
+    .title {
+      margin-bottom: 50px;
+      h2 {
+        text-align: center;
+      }
+    }
+    .demos {
+      .item {
+        margin: 0 auto;
+
+        position: relative;
+        img {
+          max-width: 100%;
+        }
+
+          .ped-btn {
+              border: 1px solid #ffc111;
+              color: #333;
+              cursor: pointer;
+              display: inline-block;
+              font-size: 14px;
+              font-weight: 700;
+              margin: 0 auto;
+              padding: 12px 10px;
+              text-align: center;
+              text-transform: uppercase;
+              transition: all 0.4s ease 0s;
+              z-index: 222;
+              background: #ffc111;
+              width: 160px;
+              border-radius: 3px;
+              position: absolute;
+              top: 47%;
+              left: 0;
+              right: 0;
+              z-index: 99999;
+              opacity: 0;
+          }
+
+        &:hover {
+          .ped-btn {
+            opacity: 1;
+          }
+        }
+        &.middle {
+          margin: 0 60px 40px 60px;
+        }
+        .first {
+          background: #fff none repeat scroll 0 0;
+    margin-bottom: 0;
+    /* height: 490px; */
+    /* overflow: hidden; */
+    position: relative;
+    width: auto;
+    z-index: 99;
+    margin-right: 15px;
+
+
+    img {
+      border: 1px solid #e8e8e8;
+    }
+
+        }
+
+   .sec {
+     margin: 0 auto !important;
+   }
+      }
+
+    }
+    .demo-row-sec {
+      align-content: center;
+      .item {
+      }
+    }
+  }
   .main-features {
     background-color: #f6f6f6;
     .features-wrap {
@@ -226,5 +303,27 @@
     .left-panel {
       margin-bottom: 20px !important;
     }
+  }
+}
+.likeUs {
+  background-color: #f6f6f6;
+  .title {
+    text-align: center;
+    h1 {
+      text-align: center;
+    }
+  }
+  .stars {
+   margin-top: 20px;
+   color: #ffc111;
+  }
+}
+.footer {
+  background: #222222;
+  p {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 0;
   }
 }

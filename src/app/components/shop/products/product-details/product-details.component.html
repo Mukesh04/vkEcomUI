@@ -1,21 +1,41 @@
 <div class="container">
-    <div class="details-wrapper sec-padding">
-       <div fxLayout="column" fxFlex="100" fxFlex.gt-sm="100">
+    <div class="details-wrapper sec-padding" >
+       <div fxLayout="column" fxFlex="100" fxFlex.gt-sm="80">
           <div fxLayout="row wrap" fxFlex="100" fxFlex.gt-md="100" fxFlex.gt-sm="100">
               <div fxFlex="100" fxFlex.gt-md="50" fxFlex.md="45">
-                  <mat-card class="product-image">
-                     <div>
-                        <button mat-icon-button  fxHide="false" fxHide.gt-md>
-                           <mat-icon>fullscreen</mat-icon>
-                        </button>
-                        <img [src]="product.pictures" (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)"/>
+                  <!-- <mat-card class="product-image">
+                     <div *ngFor="let image of product.pictures">
+                        <ngx-image-zoom   [thumbImage]="image" [fullImage]="image" zoomMode="hover"
+                    ></ngx-image-zoom>
                      </div>
-                  </mat-card>
+                  </mat-card> -->
+                  <mat-card class="product-image">
+                    <div>
+                       <button mat-icon-button  fxHide="false" fxHide.gt-md>
+                          <mat-icon>fullscreen</mat-icon>
+                       </button>
+                       <img [src]="product.pictures"/>
+                    </div>
+                 </mat-card>
+
+
+                <!-- <div class="small-carousel">
+                    <div class="swiper-container" [swiper]="config">
+                        <div class="swiper-wrapper">
+                            <div *ngFor="let image of product.pictures" class="swiper-slide">
+                                <mat-card (click)="selectImage(image)" class="p-1">
+                                    <img [attr.data-src]="image.small" class="swiper-lazy"/>
+                                    <div class="swiper-lazy-preloader"></div>
+                                </mat-card>
+                            </div>
+                        </div>
+                        <button mat-icon-button class="swiper-button-prev swipe-arrow"><mat-icon>keyboard_arrow_left</mat-icon></button>
+                        <button mat-icon-button class="swiper-button-next swipe-arrow"><mat-icon>keyboard_arrow_right</mat-icon></button>
+                    </div>
+                </div> -->
                </div>
                <div fxFlex="100" fxFlex.gt-md="50" fxFlex.md="55" ngClass.gt-sm="px-3 m-0" ngClass.sm="mt-2" ngClass.xs="mt-2">
-                  <div #zoomViewer fxShow="false" fxShow.gt-md>
-                     <mat-card *ngIf="zoomImage" class="zoom-viewer mat-elevation-z18" [ngStyle]="{'background-image': 'url(' + zoomImage + ')'}"></mat-card>
-                  </div>
+
                   <div class="product-right">
                      <div class="product-details">
                         <h2>{{product.name}}</h2>
@@ -157,6 +177,10 @@
                </mat-tab-group>
             </mat-card>
          </div>
+
+         <div class="products sec-padding">
+          <app-product-carousel-three [product]="products | slice:0:6"></app-product-carousel-three>
+         </div>
        </div>
        <div fxLayout="row wrap" fxHide fxShow.gt-sm fxFlex="100" fxFlex.gt-sm="22">
         <div fxFlex="100"  >
@@ -214,15 +238,12 @@
        </div>
        </div>
        </div>
-       <div fxLayout="row wrap" class="mt-20">
 
-          <div fxFlex="100" fxFlex.gt-md="20" fxFlex.md="25" ngClass.gt-sm="pl-3">
-             <!-- <app-popular-products></app-popular-products> -->
-          </div>
-       </div>
     </div>
     <!-- <div class="py-2 mt-2">
        <h2>Related Products</h2>
        <div class="divider"></div>
        <app-products-carousel [products]="relatedProducts"></app-products-carousel>
        </div> -->
+
+

@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DemoComponent } from './components/demo/demo.component';
 import { NgxSpinnerModule } from "ngx-spinner";
+import { NgxImgZoomModule } from 'ngx-img-zoom';
+
 
 import { MainComponent } from './components/main/main.component';
 
@@ -34,7 +36,8 @@ import { SharedModule } from './components/shared/shared.module';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxImgZoomModule
   ],
   providers: [],
   bootstrap: [AppComponent]

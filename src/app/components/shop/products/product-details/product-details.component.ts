@@ -5,6 +5,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { MatDialog } from '@angular/material';
 import { CartService } from 'src/app/components/shared/services/cart.service';
 import { SwiperDirective, SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { ProductZoomComponent } from './product-zoom/product-zoom.component';
 
 
 @Component({
@@ -13,8 +14,11 @@ import { SwiperDirective, SwiperConfigInterface } from 'ngx-swiper-wrapper';
   styleUrls: ['./product-details.component.sass']
 })
 export class ProductDetailsComponent implements OnInit {
- zoomViewer: any;
+
   public config: SwiperConfigInterface={};
+
+  @ViewChild('zoomViewer', { static: true }) zoomViewer;
+  @ViewChild(SwiperDirective, { static: true }) directiveRef: SwiperDirective;
 
   public product            :   Product = {};
   public products           :   Product[] = [];
@@ -26,17 +30,16 @@ export class ProductDetailsComponent implements OnInit {
 
   index: number;
 
-  constructor(private route: ActivatedRoute, public productsService: ProductService, public dialog: MatDialog, private router: Router, private cartService: CartService) { }
+  constructor(private route: ActivatedRoute, public productsService: ProductService, public dialog: MatDialog, private router: Router, private cartService: CartService) {
+    this.route.params.subscribe(params => {
+      const id = +params['id'];
+      this.productsService.getProduct(id).subscribe(product => this.product = product)
+    });
+   }
 
   ngOnInit() {
     this.productsService.getProducts().subscribe(product => this.products = product);
-    this.route.params
-    .subscribe(
-      (params: Params) => {
-        this.index = +params['id'];
-        this.productsService.getProduct(this.index).subscribe(product => this.product = product)
-      }
-    )
+
 
     this.getRelatedProducts();
   }
@@ -70,22 +73,6 @@ export class ProductDetailsComponent implements OnInit {
   }
 
 
-public slideConfig = {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-};
-
-public slideNavConfig = {
-  vertical: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.product-slick',
-  arrows: false,
-  dots: false,
-  focusOnSelect: true
-}
 
 
 public increment() {
@@ -119,10 +106,12 @@ getRelatedProducts() {
       this.router.navigate(['/pages/checkout']);
  }
 
+
+
  public onMouseMove(e){
   if(window.innerWidth >= 1280){
     var image, offsetX, offsetY, x, y, zoomer;
-    image = e.currentTarget; 
+    image = e.currentTarget;
     offsetX = e.offsetX;
     offsetY = e.offsetY;
     x = offsetX/image.offsetWidth*100;
@@ -141,10 +130,12 @@ public onMouseLeave(event){
   this.zoomViewer.nativeElement.children[0].style.display = "none";
 }
 
-
-
-
-
+public openZoomViewer(){
+  this.dialog.open(ProductZoomComponent, {
+    data: this.zoomImage,
+    panelClass: 'zoom-dialog'
+  });
+}
 
 
 

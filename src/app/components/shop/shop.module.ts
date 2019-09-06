@@ -17,6 +17,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { HomeTwoComponent } from './home-two/home-two.component';
 import { HomeThreeComponent } from './home-three/home-three.component';
+// Import the library
+import { NgxImageZoomModule } from 'ngx-image-zoom';
 
 import { ProductCarouselComponent } from './../shop/home/product-carousel/product-carousel.component';
 import { from } from 'rxjs';
@@ -26,6 +28,8 @@ import { BrandsComponent } from './widgets/brands/brands.component';
 import { CategoriesComponent } from './widgets/categories/categories.component';
 import { PopularProductsComponent } from './widgets/popular-products/popular-products.component';
 import { HomeFourComponent } from './home-four/home-four.component';
+import { ProductZoomComponent } from './products/product-details/product-zoom/product-zoom.component';
+import { HomeFiveComponent } from './home-five/home-five.component';
 
 
 @NgModule({
@@ -49,6 +53,8 @@ import { HomeFourComponent } from './home-four/home-four.component';
     CategoriesComponent,
     PopularProductsComponent,
     HomeFourComponent,
+    ProductZoomComponent,
+    HomeFiveComponent,
   ],
   imports: [
     CommonModule,
@@ -58,10 +64,13 @@ import { HomeFourComponent } from './home-four/home-four.component';
     FormsModule,
     ReactiveFormsModule,
     FlexLayoutModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    NgxImageZoomModule.forRoot() // <-- Add this line
+
   ],
   exports: [
     ProductDialogComponent
+
   ],
 
   entryComponents:[
