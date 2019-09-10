@@ -36,6 +36,7 @@ import { HeaderThreeComponent } from './header-three/header-three.component';
 import { BannersFourComponent } from './banners-four/banners-four.component';
 import { BlogSectionComponent } from './blog-section/blog-section.component';
 import { BannerPromotionComponent } from './banner-promotion/banner-promotion.component';
+import { HeaderFourComponent } from './header-four/header-four.component';
 
 
 
@@ -52,7 +53,8 @@ import { BannerPromotionComponent } from './banner-promotion/banner-promotion.co
     HeaderThreeComponent,
     BannersFourComponent,
     BlogSectionComponent,
-    BannerPromotionComponent
+    BannerPromotionComponent,
+    HeaderFourComponent
   ],
   imports: [
     CommonModule,
@@ -106,6 +108,7 @@ import { BannerPromotionComponent } from './banner-promotion/banner-promotion.co
     FlexLayoutModule,
     HeaderTwoComponent,
     HeaderThreeComponent,
+    HeaderFourComponent,
     ShoppingWidgetsComponent,
     BannersFourComponent,
     BlogSectionComponent,
