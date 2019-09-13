@@ -69,6 +69,7 @@
   <app-header-four *ngIf="url == '/home/five' || url == '/home/five'"></app-header-four>
   <router-outlet></router-outlet>
 
-  <app-footer></app-footer>
+  <app-footer *ngIf="url != '/home/five'"></app-footer>
+  <app-footer-two *ngIf="url == '/home/five'"></app-footer-two>
 
 </mat-sidenav-container>

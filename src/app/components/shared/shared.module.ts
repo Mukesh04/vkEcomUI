@@ -37,6 +37,9 @@ import { BannersFourComponent } from './banners-four/banners-four.component';
 import { BlogSectionComponent } from './blog-section/blog-section.component';
 import { BannerPromotionComponent } from './banner-promotion/banner-promotion.component';
 import { HeaderFourComponent } from './header-four/header-four.component';
+import { CategoriesMenuComponent } from './categories-menu/categories-menu.component';
+import { CategoriesSectionComponent } from './categories-section/categories-section.component';
+import { FooterTwoComponent } from './footer-two/footer-two.component';
 
 
 
@@ -54,7 +57,10 @@ import { HeaderFourComponent } from './header-four/header-four.component';
     BannersFourComponent,
     BlogSectionComponent,
     BannerPromotionComponent,
-    HeaderFourComponent
+    HeaderFourComponent,
+    CategoriesMenuComponent,
+    CategoriesSectionComponent,
+    FooterTwoComponent
   ],
   imports: [
     CommonModule,
@@ -112,7 +118,10 @@ import { HeaderFourComponent } from './header-four/header-four.component';
     ShoppingWidgetsComponent,
     BannersFourComponent,
     BlogSectionComponent,
-    BannerPromotionComponent
+    BannerPromotionComponent,
+    CategoriesMenuComponent,
+    CategoriesSectionComponent,
+    FooterTwoComponent
 
   ],
   providers: [
