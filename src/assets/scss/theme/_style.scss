@@ -199,6 +199,9 @@ li {
 .divider {
   border-top: 1px solid $grey3;
 }
+.bg {
+  background: $background;
+}
 .ml-10 {
   margin-left: 10px;
 }
@@ -2500,6 +2503,9 @@ line-height: 23px;
     color: #222;
     transition: .5s ease;
     font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+    }
           }
         }
       }
