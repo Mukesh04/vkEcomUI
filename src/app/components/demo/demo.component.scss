@@ -2,26 +2,32 @@
   .demo-header {
     background-image: url('../../../../src/assets/images/demo/demo-header-bg.jpg');
     background-size: cover;
-    background-position: top;
-    padding: 180px 0 204px 0;
+    background-position: center;
+    padding: 116px 0 116px 0;
+    margin: 60px;
     .left-panel {
       width: 100%;
     height: 100%;
+    text-align: center;
+    .logo {
+      margin-bottom: 20px;
+    }
     .text-intro {
       h1 {
         text-transform: capitalize;
         color: #ffc111;
+        line-height: 58px;
         .powerful {
-          font-size: 51px;
+          font-size: 37px;
           font-weight: 300;
           letter-spacing: 7px;
-          color: #333;
+          color: #fff;
+
         }
         .theme {
-          font-size: 52px;
-          font-weight: 500;
-          /* letter-spacing: 7px; */
-          color: #333;
+          font-size: 38px;
+    font-weight: 300;
+    color: #fff;
         }
       }
     }
@@ -44,6 +50,19 @@
       border-radius: 3px;
   }
 }
+ul {
+  display: flex;
+  justify-content: center;
+margin-top: 15px;
+  li {
+    color: #fff;
+    margin-right: 7px;
+    i {
+      margin-right: 5px;
+      font-size: 16px;
+    }
+  }
+}
     }
     .right-panel {
       img {
@@ -53,6 +72,16 @@
     }
   }
   .demo-showcase {
+    .title {
+      text-align: center;
+      margin-bottom: 80px;
+      h2 {
+        font-weight: 400;
+      }
+      p {
+        margin-top: 15px;
+      }
+     }
     .demos {
       .item {
         margin: 0 auto;
@@ -209,6 +238,9 @@
         .title {
          text-align: center;
          margin-bottom: 80px;
+         h2 {
+           font-weight: 400;
+         }
         }
         .features {
           .row {
@@ -307,6 +339,32 @@
 }
 .likeUs {
   background-color: #f6f6f6;
+  .theme-features {
+    margin: 0 auto;
+    width: 540px;
+    max-width: 100%;
+    padding: 32px;
+    border-radius: 6px;
+   .mat-card {
+     .item {
+       h2 {
+         font-weight: 400;
+         margin-bottom: 10px;
+       }
+       ul {
+         margin-top: 17px;
+         li {
+           margin-bottom: 10px;
+           font-weight: 600;
+           i {
+             margin-right: 5px;
+             font-size: 16px;
+           }
+         }
+       }
+     }
+   }
+  }
   .title {
     text-align: center;
     h1 {

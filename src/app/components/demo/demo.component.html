@@ -1,24 +1,34 @@
 <div class="demo-wrapper">
   <div class="demo-header">
       <div class="container">
-        <div class="demo-header-wrap" fxLayout='row' fxLayout.lt-md="column">
-            <div fxFlex="100" fxFlex.gt-sm="50" class="left-panel">
-                <div class="logo"><img src="assets/images/logo-02-01.png" alt=""> </div>
+        <div class="demo-header-wrap" fxLayout='column' fxLayout.lt-md="column">
+            <div fxFlex="100" fxFlex.gt-sm="40" class="left-panel">
+                <div class="logo"><img src="assets/images/logo-white.png" alt=""> </div>
                   <div class="text-intro">
                     <h1><span class="powerful">POWERFUL</span><br>Angular Material<br><span class="theme">Ecommerce Theme</span> </h1>
                   </div>
+                  <ul fxLayout="row">
+                      <li fxLayout="row"><i class="material-icons">check</i><span>Quality check by Envato</span> </li>
+                      <li fxLayout="row"><i class="material-icons">check</i><span>Lifetime regular updates</span></li>
+                      <li fxLayout="row"><i class="material-icons">check</i><span>6 months free support</span></li>
+                      <li fxLayout="row"><i class="material-icons">check</i><span>Full access to all files included in the package</span></li>
+                    </ul>
                   <div class="button">
-                      <a href="#" class="ped-btn left-btn">Buy Now</a>
+                      <a target="_blank" href="https://themeforest.net/item/sophia-angular-material-ecommerce-template/24219775" class="ped-btn left-btn">Buy Now</a>
                   </div>
                </div>
-               <div fxFlex="100" fxFlex.gt-sm="50" class="right-panel">
+               <!-- <div fxFlex="100" fxFlex.gt-sm="60" class="right-panel">
                   <img src="assets/images/demo/laptop.png" alt="">
-              </div>
+              </div> -->
         </div>
       </div>
   </div>
   <div class="demo-showcase sec-padding">
      <div class="container">
+        <div class="title">
+            <h2>Main demo</h2>
+            <p>Check this beautiful demo with 5 different home pages</p>
+        </div>
        <div class="demos" fxLayout='row' fxLayout.lt-lg="column">
            <div  class="item" fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
              <div class="first">
@@ -82,6 +92,26 @@
      </div>
     </div>
    </div>
+
+   <div class="demo-showcase sec-padding">
+    <div class="container">
+      <div class="title">
+          <h2>New demos are comming soon</h2>
+          <p>On the next update, be prepared for new, very beautiful demos </p>
+      </div>
+      <div class="demos" fxLayout='row' fxLayout.lt-lg="column">
+           <div  class="item" fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
+             <div class="first">
+                 <img src="assets/images/demo/home_new.jpg" alt="">
+             </div>
+              <div class="seccond">
+                <h4><a >INDUSTRIAL (COMING SOON)</a></h4>
+              </div>
+
+           </div>
+           </div>
+      </div>
+    </div>
    <div class="main-features sec-padding">
      <div class="container">
         <div class="features-wrap">
@@ -209,6 +239,19 @@
    </div>
    <div class="likeUs sec-padding">
       <div class="container">
+        <div class="theme-features">
+            <mat-card fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="start start"  class="p-0">
+              <div class="item">
+                <h2>Lifetime License</h2>
+                <ul>
+                  <li fxLayout="row"><i class="material-icons">check</i><span>Quality check by Envato</span> </li>
+                  <li fxLayout="row"><i class="material-icons">check</i><span>Lifetime regular updates</span></li>
+                  <li fxLayout="row"><i class="material-icons">check</i><span>6 months free support</span></li>
+                  <li fxLayout="row"><i class="material-icons">check</i><span>Full access to all files included in the package</span></li>
+                </ul>
+              </div>
+            </mat-card>
+        </div>
         <div class="title">
           <h2>If you like Sophia app - Please rate us</h2>
           <div class="stars" fxLayout='row' fxLayoutAlign="center center">
