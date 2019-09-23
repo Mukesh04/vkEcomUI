@@ -330,10 +330,27 @@ margin-top: 15px;
   }
 
   .demo-header {
-
+    margin: 0 !important;
     padding: 100px 0 100px 0 !important;
     .left-panel {
       margin-bottom: 20px !important;
+    }
+  }
+
+  .likeUs {
+
+    .theme-features {
+      width: 80% !important;
+      max-width: 100% !important;
+      padding: 26px !important;
+
+    }
+    .title {
+      h2 {
+        font-size: 28px !important;
+
+        line-height: 33px !important;
+      }
     }
   }
 }
@@ -341,8 +358,8 @@ margin-top: 15px;
   background-color: #f6f6f6;
   .theme-features {
     margin: 0 auto;
-    width: 540px;
-    max-width: 100%;
+
+    max-width: 540px;
     padding: 32px;
     border-radius: 6px;
    .mat-card {
