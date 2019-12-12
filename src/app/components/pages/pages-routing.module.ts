@@ -10,9 +10,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { FaqComponent } from './faq/faq.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 
-
-
-
 const routes: Routes = [
   {
     path: '',
