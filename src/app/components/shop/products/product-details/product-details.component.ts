@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
 import { Product } from 'src/app/modals/product.model';
 import { ProductService } from 'src/app/components/shared/services/product.service';
 import { ActivatedRoute, Params, Router } from '@angular/router';
@@ -16,6 +16,7 @@ import { ProductZoomComponent } from './product-zoom/product-zoom.component';
 export class ProductDetailsComponent implements OnInit {
 
   public config: SwiperConfigInterface={};
+  @Output() onOpenProductDialog: EventEmitter<any> = new EventEmitter();
 
   @ViewChild('zoomViewer', { static: true }) zoomViewer;
   @ViewChild(SwiperDirective, { static: true }) directiveRef: SwiperDirective;
@@ -29,6 +30,7 @@ export class ProductDetailsComponent implements OnInit {
   public counter            :   number = 1;
 
   index: number;
+  bigProductImageIndex = 0;
 
   constructor(private route: ActivatedRoute, public productsService: ProductService, public dialog: MatDialog, private router: Router, private cartService: CartService) {
     this.route.params.subscribe(params => {
@@ -45,31 +47,55 @@ export class ProductDetailsComponent implements OnInit {
   }
 
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     this.config = {
-      observer: false,
-      slidesPerView: 4,
+      observer: true,
+      slidesPerView: 3,
       spaceBetween: 10,
       keyboard: true,
       navigation: true,
       pagination: false,
+      grabCursor: true,
       loop: false,
       preloadImages: false,
       lazy: true,
       breakpoints: {
         480: {
-          slidesPerView: 2
+          slidesPerView: 1
         },
-        600: {
+        740: {
+          slidesPerView: 2,
+        },
+        960: {
           slidesPerView: 3,
-        }
+        },
+        1280: {
+          slidesPerView: 3,
+        },
+
+
       }
     }
   }
 
-  public selectImage(image){
-    this.image = image.medium;
-    this.zoomImage = image.big;
+
+  public openProductDialog(product, bigProductImageIndex) {
+    let dialogRef = this.dialog.open(ProductZoomComponent, {
+      data: {product, index: bigProductImageIndex },
+      panelClass: 'product-dialog',
+    });
+    dialogRef.afterClosed().subscribe(product => {
+      if (product) {
+        this.router.navigate(['/products', product.id, product.name]);
+      }
+    });
+  }
+
+
+  public selectImage(index) {
+    console.log(this.product)
+    console.log(index)
+    this.bigProductImageIndex = index;
   }
 
 

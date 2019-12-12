@@ -10,39 +10,24 @@ import { Product } from 'src/app/modals/product.model';
   encapsulation: ViewEncapsulation.None
 })
 export class ProductZoomComponent implements OnInit {
-  public product            :   Product = {};
-  public products           :   Product[] = [];
+  public product;
+  public selectedProductImageIndex;
 
   @ViewChild('zoomImage', { static: true }) zoomImage;
 
   constructor( private productsService: ProductService, public dialogRef: MatDialogRef<ProductZoomComponent>,
-              @Inject(MAT_DIALOG_DATA) public image:any) { }
+              @Inject(MAT_DIALOG_DATA) public data: {product, index}) {
+                this.product = data.product;
+                this.selectedProductImageIndex = data.index;
+               }
 
   ngOnInit() {
 
-    this.productsService.getProducts().subscribe(product => this.products = product);
   }
 
   public close(): void {
     this.dialogRef.close();
   }
 
-  public count:number = 10;
-  public maxWidth:number = 60;
-  public zoomIn(){
-    if(this.count < 60){
-      this.maxWidth = this.maxWidth + this.count;
-      this.zoomImage.nativeElement.style.maxWidth = this.maxWidth + '%';
-      this.count = this.count + 10;
-    }
-  }
-
-  public zoomOut(){
-    if(this.count > 10){
-      this.count = this.count - 10;
-      this.maxWidth = this.maxWidth - this.count;
-      this.zoomImage.nativeElement.style.maxWidth = this.maxWidth + '%';
-    }
-  }
 
 }

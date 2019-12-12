@@ -69,12 +69,14 @@ import { HomeFiveComponent } from './home-five/home-five.component';
 
   ],
   exports: [
-    ProductDialogComponent
+    ProductDialogComponent,
+    ProductZoomComponent
 
   ],
 
   entryComponents:[
-    ProductDialogComponent
+    ProductDialogComponent,
+    ProductZoomComponent
   ],
 })
 
